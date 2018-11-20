@@ -1,33 +1,76 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>About Me</title>
+    <title>KDWD</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/carousel.css" />
+    <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/carousel.js"></script>
 </head>
-<body>
-    <nav id="mySideNav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About Me</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact Me</a>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, asperiores quibusdam qui ipsam iste commodi voluptate impedit aut possimus soluta.</p>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-    </nav>
-    <span onclick="openNav()"><i class="fas fa-arrow-circle-right"></i></span>
-    <section id="carousel">
 
-    </section>
+<body>
+    <aside class="sidemenu">
+        <nav id="mySideNav" class="sidenav">
+            <img class="logo" src="images/logo.png">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About Me</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact Me</a>
+            <p class="aside-p"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, asperiores
+                quibusdam qui ipsam iste commodi voluptate.</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </nav>
+        <span onclick="openNav()"><i class="fas fa-arrow-circle-right"></i></span>
+    </aside>
+
+    <div id="carousel">
+        <div class="slider-container">
+
+            <div class="slider-content">
+
+                <div class="slider-single">
+                    <img class="slider-single-image" src="images/monument-screenshot.png" alt="Monument" />
+                    <a class="slider-single-download" href="javascript:void(0);">Download <i class="fa fa-download"></i></a>
+                    <h1 class="slider-single-title">Monument Blog</h1>
+                </div>
+
+                <div class="slider-single">
+                    <img class="slider-single-image" src="images/tab-search-screenshot.png" alt="Tab-Search" />
+                    <a class="slider-single-download" href="javascript:void(0);">Download <i class="fa fa-download"></i></a>
+                    <h1 class="slider-single-title">Tab Search</h1>
+                </div>
+
+                <div class="slider-single">
+                    <img class="slider-single-image" src="#" alt="3" />
+                    <a class="slider-single-download" href="javascript:void(0);">Download <i class="fa fa-download"></i></a>
+                    <h1 class="slider-single-title">Supermarket</h1>
+                </div>
+
+
+            </div>
+
+            <a class="slider-left" href="javascript:void(0);"><i class="fa fa-arrow-left"></i></a>
+
+            <a class="slider-right" href="javascript:void(0);"><i class="fa fa-arrow-right"></i></a>
+
+        </div>
+    </div>
+
     <section class="form-container col-md-8">
         <form id="contact">
             <input type="text" placeholder="Name">
@@ -38,4 +81,5 @@
         </form>
     </section>
 </body>
+
 </html>

@@ -1,9 +1,14 @@
-span {
-    /* Button for nav bar */
+body {
+    background-color: #727271;
 }
-
+.logo {
+    width: 75%;
+    margin-top: -50px;
+    z-index: 1;
+    
+}
 .sidenav {
-    height: 100%;
+    height: 100vh;
     width: 15%;
     position: fixed;
     z-index: 1;
@@ -26,6 +31,14 @@ p {
     font-family: 'Oswald', sans-serif;
 }
 
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -20px;
+    padding-top: 25%;
+    justify-content: center;
+}
+
 p {
     color: white;
     font-size: 24px;
@@ -40,6 +53,14 @@ p {
 
 .sidenav a:hover {
     color: #ef6817;
+    text-decoration: underline;
+    transform-origin: left;
+    transform: scale(1.2);
+}
+
+.social a:hover {
+    transform: scale(1.2);
+    transform-origin: center center;
 }
 
 .sidenav .closebtn {
@@ -50,18 +71,17 @@ p {
     margin-left: 50px;
 }
 
-#main {
-    height: 100%;
-    width: 50%;
-    margin-left: 15%;
-    background: #727271;
-    color: white;
+.carousel {
+    margin-left: 25%;
+    border: 2px solid red;
 }
 
 .form-container {
     display: flex;
     flex-flow: column wrap;
     margin-left: 25%;
+    margin-top: 25%;
+    
 }
 
 #contact {
@@ -72,12 +92,13 @@ p {
 }
 
 input {
-    margin: 1%;
-    color: white;
+    margin: 0.25%;
+    border: 1px solid #ef6817;
 }
 
 .message {
     height: 20vh;
+
 }
 
 input[type="submit"] {
@@ -86,6 +107,12 @@ input[type="submit"] {
     margin-top: 1%;
     color: white;
     height: 5em;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    border: 2px solid #ef6817;
+    color: #ef6817;
 }
 
 @media screen and (max-height: 450px) {
@@ -109,7 +136,7 @@ input[type="submit"] {
 }
 
 @media screen and (max-width:775px) {
-    
+
     .sidenav {
         height: 10%;
         width: 100%;
