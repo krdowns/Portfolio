@@ -24,8 +24,8 @@
         <nav id="mySideNav" class="sidenav">
             <img class="logo" src="images/logo.png">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About Me</a>
             <a href="#">Projects</a>
+            <a href="#">About Me</a>
             <a href="#">Contact Me</a>
             <p class="aside-p"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, asperiores
                 quibusdam qui ipsam iste commodi voluptate.</p>
@@ -37,48 +37,57 @@
         </nav>
         <span onclick="openNav()"><i class="fas fa-arrow-circle-right"></i></span>
     </aside>
+    <section class="main">
+        <div id="carousel">
+            <div class="slider-container">
 
-    <div id="carousel">
-        <div class="slider-container">
+                <div class="slider-content">
 
-            <div class="slider-content">
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="images/monument-screenshot.png" alt="Monument" />
+                        <a class="slider-single-download" href="javascript:void(0);">Download <i class="fa fa-download"></i></a>
+                        <h1 class="slider-single-title">Monument Blog</h1>
+                    </div>
 
-                <div class="slider-single">
-                    <img class="slider-single-image" src="images/monument-screenshot.png" alt="Monument" />
-                    <a class="slider-single-download" href="javascript:void(0);">Download <i class="fa fa-download"></i></a>
-                    <h1 class="slider-single-title">Monument Blog</h1>
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="images/tab-search-screenshot.png" alt="Tab-Search" />
+                        <a class="slider-single-download" href="javascript:void(0);">Download <i class="fa fa-download"></i></a>
+                        <h1 class="slider-single-title">Tab Search</h1>
+                    </div>
+
+                    <div class="slider-single">
+                        <img class="slider-single-image" src="#" alt="3" />
+                        <a class="slider-single-download" href="javascript:void(0);">Download <i class="fa fa-download"></i></a>
+                        <h1 class="slider-single-title">Supermarket</h1>
+                    </div>
+
+
                 </div>
 
-                <div class="slider-single">
-                    <img class="slider-single-image" src="images/tab-search-screenshot.png" alt="Tab-Search" />
-                    <a class="slider-single-download" href="javascript:void(0);">Download <i class="fa fa-download"></i></a>
-                    <h1 class="slider-single-title">Tab Search</h1>
-                </div>
+                <a class="slider-left" href="javascript:void(0);"><i class="fa fa-arrow-left"></i></a>
 
-                <div class="slider-single">
-                    <img class="slider-single-image" src="#" alt="3" />
-                    <a class="slider-single-download" href="javascript:void(0);">Download <i class="fa fa-download"></i></a>
-                    <h1 class="slider-single-title">Supermarket</h1>
-                </div>
-
+                <a class="slider-right" href="javascript:void(0);"><i class="fa fa-arrow-right"></i></a>
 
             </div>
-
-            <a class="slider-left" href="javascript:void(0);"><i class="fa fa-arrow-left"></i></a>
-
-            <a class="slider-right" href="javascript:void(0);"><i class="fa fa-arrow-right"></i></a>
-
         </div>
-    </div>
+        <div class="about-container">
+            <article class="row">
+                <h1 class="about-head">About Me</h1>
+                <div class="left column-sm column"><i class="fas fa-code"></i><br>Web</div>
+                <div class="middle column-sm column"><i class="fas fa-headphones-alt"></i><br>Music</div>
+                <div class="right column-sm column"><i class="fas fa-gamepad"></i><br>Gaming</div>
+            </article>
+        </div>
 
-    <section class="form-container col-md-8">
-        <form id="contact">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email Address">
-            <input type="text" placeholder="Phone Number">
-            <input type="text" class="message" placeholder="Message">
-            <input type="submit" value="Contact Me">
-        </form>
+        <section class="form-container col-md-8">
+            <form id="contact">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email Address">
+                <input type="text" placeholder="Phone Number">
+                <input type="text" class="message" placeholder="Message">
+                <input type="submit" value="Contact Me">
+            </form>
+        </section>
     </section>
 </body>
 

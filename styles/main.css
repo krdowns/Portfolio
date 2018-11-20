@@ -71,28 +71,74 @@ p {
     margin-left: 50px;
 }
 
+.main {
+    width: 100%;
+}
+
 .carousel {
     margin-left: 25%;
     border: 2px solid red;
+}
+
+.row {
+    display: inline-grid;
+    margin-top: 42.5%;
+    margin-left: 15.5%;
+    margin-right: .5%;
+    border: 2px solid blue;
+    width: 84%;  
+}
+
+.about-head {
+    grid-column-start: 2;
+    grid-column-end: 11;
+    text-align: center;
+    margin-bottom: 10%;
+    padding-top: 5%;
+}
+
+.column {
+    border: 2px solid red;
+    text-align: center;
+    font-size: 24px;
+}
+
+.column i{
+    font-size: 48px;
+    color: white;
+}
+
+.left {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.middle {
+    grid-column-start: 5;
+    grid-column-end: 8;
+}
+
+.right {
+    grid-column-start: 9;
+    grid-column-end: 12;
 }
 
 .form-container {
     display: flex;
     flex-flow: column wrap;
     margin-left: 25%;
-    margin-top: 25%;
+    margin-top: 55%;
     
 }
 
 #contact {
-
     display: flex;
     flex-direction: column;
     margin: 10%;
 }
 
 input {
-    margin: 0.25%;
+    margin: 0.5%;
     border: 1px solid #ef6817;
 }
 
@@ -117,7 +163,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-height: 450px) {
     .sidenav {
-        padding-top: 15px;
+        padding-top: 10%;
     }
 
     .sidenav a {
@@ -147,19 +193,32 @@ input[type="submit"]:hover {
         visibility: hidden
     }
 
+    .logo {
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .carousel {
+    
+    }
     .form-container {
         width: 100%;
         bottom: -25em;
         margin-left: 0;
+        margin-top: -50px;
     }
 
     .contact {
         width: 100%;
         border: 2px solid red;
+        margin-top: 25%;
     }
 
     input[type="submit"] {
-        width: 100vw;
+        width: 99%;
         border: 1px solid orange;
         left: 0;
     }
