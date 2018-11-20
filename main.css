@@ -1,6 +1,6 @@
 .sidenav {
     height: 100%;
-    width: 200px;
+    width: 15%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -10,8 +10,6 @@
     padding-top: 60px;
     transition: 0.5s;
 }
-
-
 
 .sidenav a, p {
     padding: 8px 8px 8px 32px;
@@ -27,8 +25,10 @@ p {
     color: white;
 }
 
-
-
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
 
 .sidenav a:hover {
     color: #ef6817;
@@ -42,10 +42,23 @@ p {
     margin-left: 50px;
 }
 
-body {
-    left: 200px;
+#main {
+    height: 100%;
+    width: 50%;
+    margin-left: 15%;
+    background: #727272;
 }
+
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 960px) {
+    .sidenav a { font-size: 14px;}
+    nav p {visibility: hidden;}
+}
+
+@media screen and (max-width:653px) {
+    .sidenav a {visibility: hidden}
 }
