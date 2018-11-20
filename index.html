@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>About Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script src="main.js"></script>
@@ -19,14 +19,23 @@
         <a href="#">About Me</a>
         <a href="#">Projects</a>
         <a href="#">Contact Me</a>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, asperiores quibusdam qui ipsam iste commodi voluptate impedit aut possimus soluta, dignissimos non error unde nesciunt! Neque laudantium accusantium obcaecati. Perspiciatis! </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, asperiores quibusdam qui ipsam iste commodi voluptate impedit aut possimus soluta.</p>
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
     </nav>
-    <span onclick="openNav()">open</span>
-    <section id="main">
-        Hello! My Name is Kenny Downs and I am a Full Stack Web Developer based out of San Francisco, CA. Take a look at my work and contact me with any questions or opportunities.
+    <span onclick="openNav()"><i class="fas fa-arrow-circle-right"></i></span>
+    <section id="carousel">
+
+    </section>
+    <section class="form-container col-md-8">
+        <form id="contact">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email Address">
+            <input type="text" placeholder="Phone Number">
+            <input type="text" class="message" placeholder="Message">
+            <input type="submit" value="Contact Me">
+        </form>
     </section>
 </body>
 </html>

@@ -1,3 +1,7 @@
+span {
+    /* Button for nav bar */
+}
+
 .sidenav {
     height: 100%;
     width: 15%;
@@ -11,7 +15,8 @@
     transition: 0.5s;
 }
 
-.sidenav a, p {
+.sidenav a,
+p {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -23,11 +28,14 @@
 
 p {
     color: white;
+    font-size: 24px;
 }
 
 ::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
 }
 
 .sidenav a:hover {
@@ -46,19 +54,86 @@ p {
     height: 100%;
     width: 50%;
     margin-left: 15%;
-    background: #727272;
+    background: #727271;
+    color: white;
+}
+
+.form-container {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 25%;
+}
+
+#contact {
+
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+}
+
+input {
+    margin: 1%;
+    color: white;
+}
+
+.message {
+    height: 20vh;
+}
+
+input[type="submit"] {
+    background-color: #ef6817;
+    border: none;
+    margin-top: 1%;
+    color: white;
+    height: 5em;
 }
 
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 960px) {
-    .sidenav a { font-size: 14px;}
-    nav p {visibility: hidden;}
+    .sidenav a {
+        font-size: 18px;
+    }
+
+    nav p {
+        visibility: hidden;
+    }
 }
 
-@media screen and (max-width:653px) {
-    .sidenav a {visibility: hidden}
+@media screen and (max-width:775px) {
+    
+    .sidenav {
+        height: 10%;
+        width: 100%;
+
+    }
+
+    .sidenav a {
+        visibility: hidden
+    }
+
+    .form-container {
+        width: 100%;
+        bottom: -25em;
+        margin-left: 0;
+    }
+
+    .contact {
+        width: 100%;
+        border: 2px solid red;
+    }
+
+    input[type="submit"] {
+        width: 100vw;
+        border: 1px solid orange;
+        left: 0;
+    }
 }
