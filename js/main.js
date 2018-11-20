@@ -20,6 +20,13 @@ $(document).ready(function () {
     $(".right").click(function () {
         $(".carousel").carousel("next");
     });
+    $("#mySideNav a").click(function(event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $(this).offset().top}, 2000);
+        })
+    })
 });
 
 function openNav() {
@@ -28,6 +35,5 @@ function openNav() {
 
 function closeNav() {
     document.getElementById("mySideNav").style.width = "0";
-    document.getElementsByClassName(".carousel").style.width ="100%";
 }
 
