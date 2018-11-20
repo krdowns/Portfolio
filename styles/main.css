@@ -1,12 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #727271;
 }
+
 .logo {
     width: 75%;
     margin-top: -50px;
     z-index: 1;
-    
+
 }
+
 .sidenav {
     height: 100vh;
     width: 15%;
@@ -21,7 +27,7 @@ body {
 }
 
 .sidenav a,
-p {
+.sidenav p {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -46,9 +52,7 @@ p {
 
 ::-webkit-scrollbar {
     width: 0px;
-    /* remove scrollbar space */
     background: transparent;
-    /* optional: just make scrollbar invisible */
 }
 
 .sidenav a:hover {
@@ -76,17 +80,28 @@ p {
 }
 
 .carousel {
-    margin-left: 25%;
-    border: 2px solid red;
+    margin-left: 15.5%;
+    width: 84.0%;
+    border: red 2px solid;
+}
+
+.carousel-inner {
+    width: 100%;
+}
+
+.carousel-inner img {
+    margin: 0px auto;
+    height: 640px;
+    width: 100%;
 }
 
 .row {
     display: inline-grid;
-    margin-top: 42.5%;
+    margin-top: 2%;
     margin-left: 15.5%;
     margin-right: .5%;
     border: 2px solid blue;
-    width: 84%;  
+    width: 84%;
 }
 
 .about-head {
@@ -97,13 +112,21 @@ p {
     padding-top: 5%;
 }
 
+.about-container {
+    text-align: center;
+}
+
+article {
+    font-size: 20px;
+    text-align: center;
+}
+
 .column {
-    border: 2px solid red;
     text-align: center;
     font-size: 24px;
 }
 
-.column i{
+.column i {
     font-size: 48px;
     color: white;
 }
@@ -111,30 +134,40 @@ p {
 .left {
     grid-column-start: 1;
     grid-column-end: 4;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 .middle {
     grid-column-start: 5;
     grid-column-end: 8;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 .right {
     grid-column-start: 9;
     grid-column-end: 12;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.contact-head {
+    text-align: center;
 }
 
 .form-container {
     display: flex;
     flex-flow: column wrap;
     margin-left: 25%;
-    margin-top: 55%;
-    
+    margin-top: 2.5%;
+
 }
 
 #contact {
     display: flex;
     flex-direction: column;
-    margin: 10%;
+    margin: 5% 10 10 10;
 }
 
 input {
@@ -193,17 +226,15 @@ input[type="submit"]:hover {
         visibility: hidden
     }
 
-    .logo {
-    }
+    .logo {}
 
     .main {
         display: flex;
         flex-direction: column;
     }
-    
-    .carousel {
-    
-    }
+
+    .carousel {}
+
     .form-container {
         width: 100%;
         bottom: -25em;
