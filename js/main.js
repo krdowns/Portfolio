@@ -20,20 +20,10 @@ $(document).ready(function () {
     $(".right").click(function () {
         $(".carousel").carousel("next");
     });
-    
 });
 
-$('a[href^="#"]').on('click', function(event) {
-    var target = $(this.getAttribute('href'));
-    
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
-});
 
+//-----OPEN AND CLOSE NAV-----//
 function openNav() {
     document.getElementById("mySideNav").style.width = "15%";
 }
@@ -41,4 +31,3 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySideNav").style.width = "0";
 }
-

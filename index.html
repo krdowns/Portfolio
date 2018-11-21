@@ -25,9 +25,9 @@
         <nav id="mySideNav" class="sidenav">
             <img class="logo" src="images/logo.png">
             <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-            <a href="#">Projects</a>
-            <a href="#">About Me</a>
-            <a href="#">Contact Me</a>
+            <a class="activeNav" href="#projects">Projects</a>
+            <a href="#aboutMe">About Me</a>
+            <a href="#contactMe">Contact Me</a>
             <div class="social">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -37,6 +37,7 @@
         <span onclick="openNav()"><i class="fas fa-arrow-circle-right"></i></span>
     </aside>
     <section class="main">
+        <h1 class="projects-head"><a name="projects">PROJECTS</a></h1>
         <div id="carousel">
             <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -67,7 +68,7 @@
         </div>
         <div class="about-container">
             <article class="row">
-                <h1 class="about-head">Hello!</h1>
+                <h1 class="about-head"><a name="aboutMe">Hello</a></h1>
                 <div class="left column-sm column"><i class="fas fa-football-ball"></i><br>
                     <h2>Sports</h2>
                     <article>
@@ -142,7 +143,7 @@
         </div>
 
         <section class="form-container col-md-8">
-            <h2 class="contact-head">Contact Me</h2>
+            <h2 class="contact-head"><a name="contactMe">Contact</a> Me</h2>
             <form id="contact">
                 <input type="text" class="col leftContact" placeholder="Your Name*" required="required">
                 <input type="email" class="col leftContact" placeholder="Email Address*" required="required">
