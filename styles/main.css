@@ -20,6 +20,7 @@ body {
     visibility: hidden;
 }
 
+
 .sidenav {
     text-align: justify;
     height: 100vh;
@@ -52,11 +53,12 @@ p {
     transform-origin: left center;
     transform: scale(1.2);
 }
+
 .social {
     display: flex;
     text-align: left;
     flex-direction: column;
-    padding-top: 5%; 
+    padding-top: 5%;
     margin-top: 20%;
 
 }
@@ -125,11 +127,16 @@ p {
     width: 100%;
 }
 
-.carousel-control-next-icon {
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
     width: 40px;
     height: 40px;
 }
 
+/* .carousel-control-prev-icon {
+    width: 40px;
+    height: 40px;
+} */
 
 
 /* -----------ABOUT ME----------- */
@@ -156,12 +163,15 @@ p {
 h1 {
     font-weight: 700;
 }
-h1, h2 {
+
+h1,
+h2 {
     color: #ef6817;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 15%;
     margin-top: 5%;
 }
+
 article {
     margin-top: 1em;
     font-size: 20px;
@@ -299,14 +309,26 @@ input[type="submit"]:hover {
     nav p {
         visibility: hidden;
     }
+
+    .form-container {
+        margin-left: 0%;
+    }
+
+    .message {
+        margin-top: -16.75%;
+    }
+
 }
 
 @media screen and (max-width:775px) {
 
+    .logo {
+        visibility: hidden;
+    }
+
     .sidenav {
         height: 10%;
-        width: 100%;
-
+        width: 100vw;
     }
 
     .sidenav a {
@@ -320,24 +342,70 @@ input[type="submit"]:hover {
         flex-direction: column;
     }
 
-    .carousel {}
+    .main h1 {
+        margin-top: 10%;
+        margin-right: 6.5%;
+    }
 
-    .form-container {
+
+    .carousel {
         width: 100%;
-        bottom: -25em;
-        margin-left: 0;
-        margin-top: -50px;
+        margin-left: 0%;
+        height: 120px;
+        float: left;
+        margin-top: -1.75%;
     }
 
-    .contact {
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        margin-top: 450%;
+
+        .form-container {
+            width: 100%;
+            bottom: -25em;
+            margin-left: 0;
+            margin-top: -50px;
+        }
+
+        .contact {
+            width: 100%;
+            border: 2px solid red;
+            margin-top: 25%;
+        }
+
+        input[type="submit"] {
+            width: 99%;
+            border: 1px solid orange;
+            left: 0;
+        }
+    }
+
+    .about-container {
+        margin-top: 75%;
+        margin-left: -2.5%;
         width: 100%;
-        border: 2px solid red;
-        margin-top: 25%;
     }
 
-    input[type="submit"] {
-        width: 99%;
-        border: 1px solid orange;
-        left: 0;
+    .about-head {
+        margin-left: 7.5%;
     }
-}
+
+    
+
+
+    @media screen and (max-width:767px) {
+        .logo {
+            visibility: hidden;
+        }
+
+        nav {
+            width: 25px;
+        }
+
+        .carousel {
+            margin-left: 1%;
+        }
+
+        
+
+    }

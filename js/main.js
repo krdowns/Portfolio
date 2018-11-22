@@ -22,6 +22,14 @@ $(document).ready(function () {
     });
 });
 
+//-----TESTAMONIALS-----//
+
+$(document).ready(function() {
+    //carousel options
+    $('#quote-carousel').carousel({
+      pause: true, interval: 10000,
+    });
+  });
 
 //-----OPEN AND CLOSE NAV-----//
 function openNav() {
