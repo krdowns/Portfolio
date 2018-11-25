@@ -34,6 +34,7 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         </nav>
         <span onclick="openNav()"><i class="fas fa-arrow-circle-right"></i></span>
     </aside>
@@ -233,16 +234,20 @@
                         </div>
                     </div>
                 </section>
-                
+
                 <section class="form-container col-md-8">
                     <h2 class="contact-head"><a name="contactMe">CO<span class="span-head">NTACT</span> ME</a></h2>
-                    <form id="contact">
-                        <input type="text" class="col leftContact" placeholder="Your Name*" required="required">
-                        <input type="email" class="col leftContact" placeholder="Email Address*" required="required">
-                        <input type="text" class="col leftContact" placeholder="Phone Number">
-                        <textarea class="message col rightContact" placeholder="Message*"></textarea>
-                        <input type="submit" class="col-lg-12" value="CONTACT">
-                    </form>
+                    <div class="container">
+                        <form>
+                          <label>First Name</label>
+                          <input type="text" name="first"><br />
+                          <label>Last Name</label>
+                          <input type="text" name="last"><br />
+                          <label>Email</label>
+                          <input type="text" name="email"><br />
+                          <input type="submit" value="Contact Me">
+                        </form>
+                      </div>
                 </section>
     </section>
 

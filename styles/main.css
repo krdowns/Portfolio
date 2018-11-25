@@ -152,7 +152,7 @@ p {
 /* The Modal (background) */
 
 .close {
-padding-top: 5%;
+    padding-top: 5%;
 }
 
 .modal {
@@ -166,43 +166,43 @@ padding-top: 5%;
     height: 100%;
     overflow: auto;
     background-color: black;
-  }
-  
-  /* Modal Content */
-  .modal-content {
+}
+
+/* Modal Content */
+.modal-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
     width: 90%;
     max-width: 1200px;
-  }
-  
-  /* The Close Button */
-  .close {
+}
+
+/* The Close Button */
+.close {
     color: white;
     position: absolute;
     top: 10px;
     right: 25px;
     font-size: 35px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #999;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  /* Hide the slides by default */
+}
+
+/* Hide the slides by default */
 /* .mySlides {
     display: none;
   } */
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -216,23 +216,23 @@ padding-top: 5%;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
     background-color: #383838;
     opacity: 0.6;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
 
     color: #ef6817;
     font-size: 12px;
@@ -241,24 +241,24 @@ padding-top: 5%;
     position: absolute;
     font-size: 24px;
     top: 0;
-  }
-  
-  img.demo {
+}
+
+img.demo {
     opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
+}
+
+.active,
+.demo:hover {
     opacity: 1;
-  }
-  
-  img.hover-shadow {
+}
+
+img.hover-shadow {
     transition: 0.3s;
-  }
-  
-  .hover-shadow:hover {
+}
+
+.hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+}
 
 
 /* -----------ABOUT ME----------- */
@@ -317,7 +317,9 @@ article {
     color: white;
 }
 
-.left, .right, .middle {
+.left,
+.right,
+.middle {
     margin-top: 25%;
 }
 
@@ -386,74 +388,35 @@ article {
 /* -----------CONTACT ME----------- */
 .contact-head {
     text-align: center;
-    margin-bottom: 2%;
+    margin-bottom: 10%;
 }
 
 .form-container {
-    display: inline-grid;
     margin-left: 20%;
-    margin-top: 2.5%;
-    padding-top: 1%;
-}
-
-#contact {
-    display: inline-grid;
-    margin-top:7.5%;
-    grid-column-gap: .5%;
-}
-
-input {
-    margin: 0.5%;
-    border: 1px solid #ef6817;
-    background: #929291;
-    color: white;
-}
-
-.leftContact {
-    border-radius: 2px;
-    grid-column-start: 1;
-    grid-column-end: 6;
-}
-
-textarea {
-    margin-top: -16.25%;
-    border: 1px solid #ef6817;
-    height: 285%;
-    border-radius: 2px;
-    grid-column-start: 6;
-    grid-column-end: 12;
-    text-emphasis: wrap;
-    background-color: #929291;
-    color: white;
-}
-
-::placeholder {
-    color: white;
-}
-
-input[type="submit"] {
-    font-family: "Nunito", sans-serif;
-    letter-spacing: .15em;
-    background-color: #ef6817;
-    border: none;
-    margin-top: 1%;
-    color: white;
-    font-weight: 900;
-    font-size: 1.5em;
-    height: 2em;
-    border-radius: 2px;
-    margin-bottom: 2%;
-    grid-column-start: 1;
-    grid-column-end: 12;
-}
-
-input[type="submit"]:hover {
-    background-color: white;
-    border: 2px solid #ef6817;
     color: #ef6817;
 }
 
+.container {
+    width: 100%;
+    clear: both;
+    margin-bottom: 2em;
+}
 
+label {
+    margin-bottom: .1em;
+    font-weight: 600;
+}
+.container input {
+    width: 100%;
+    clear: both;
+}
+
+.container input[type="submit"] {
+    margin-top: 2em;
+    background-color: #ef6817;
+    color: white;
+    border: none;
+}
 
 /* --------MEDIA QUERIES----------- */
 @media screen and (max-height: 450px) {
