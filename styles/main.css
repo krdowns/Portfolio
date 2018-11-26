@@ -20,6 +20,10 @@ body {
     z-index: 1;
 }
 
+.hamburger {
+    visibility: hidden;
+}
+
 .open {
     width: 15%;
 }
@@ -47,7 +51,7 @@ body {
 p {
     padding: 0% 2% 25% 10%;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
     color: #5f605d;
     display: block;
     transition: 0.3s;
@@ -406,6 +410,7 @@ label {
     margin-bottom: .1em;
     font-weight: 600;
 }
+
 .container input {
     width: 100%;
     clear: both;
@@ -431,7 +436,7 @@ label {
 
 @media screen and (max-width: 960px) {
     .sidenav a {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     nav p {
@@ -439,12 +444,30 @@ label {
     }
 
     .form-container {
-        margin-left: 0%;
+        margin-left: 20%;
     }
 
     .message {
         margin-top: -16.75%;
     }
+
+    .logo {
+        margin-top: 5%;
+    }
+
+}
+
+@media screen and (max-width:885px) {
+    .sidenav a {
+        font-size: 12px;
+    }
+
+
+    .form-container {
+        margin-left: 20%;
+        color: #ef6817;
+    }
+
 
 }
 
@@ -463,11 +486,17 @@ label {
         visibility: hidden
     }
 
-    .logo {}
+    .hamburger {
+        visibility: visible;
+    }
 
     .main {
         display: flex;
         flex-direction: column;
+    }
+
+    .about-head {
+        margin-left: 7.5%;
     }
 
     .main h1 {
@@ -485,49 +514,74 @@ label {
 
     .carousel-control-next-icon,
     .carousel-control-prev-icon {
-        margin-top: 450%;
-
-        .form-container {
-            width: 100%;
-            bottom: -25em;
-            margin-left: 0;
-            margin-top: -50px;
-        }
-
-        .contact {
-            width: 100%;
-            border: 2px solid red;
-            margin-top: 25%;
-        }
-
-        input[type="submit"] {
-            width: 99%;
-            border: 1px solid orange;
-            left: 0;
-        }
+        margin-top: 25%;
     }
 
-    .about-container {
-        margin-top: 75%;
-        margin-left: -2.5%;
+    .form-container {
+        width: 100%;
+        bottom: -25em;
+        margin-left: 0;
+        margin-top: -50px;
+    }
+
+    .contact {
+        width: 100%;
+        border: 2px solid red;
+        margin-top: 25%;
+    }
+
+    input[type="submit"] {
+        width: 99%;
+        border: 1px solid orange;
+        left: 0;
+    }
+}
+
+.about-container {
+    margin-top: 5%;
+    margin-left: -5.5%;
+    width: 100%;
+}
+
+.testamonial-head {
+    margin-left: 15%;
+}
+
+.test-carousel-inner p {
+    margin-left: -2.5%;
+    margin-top: 10%;
+    width: 100%;
+    text-align: justify;
+}
+
+.form-container {
+    margin-left: 20%;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .logo {
+        visibility: hidden;
+    }
+
+    nav {
         width: 100%;
     }
 
-    .about-head {
-        margin-left: 7.5%;
+    .carousel {
+        margin-left: 1%;
     }
 
-    @media screen and (max-width:767px) {
-        .logo {
-            visibility: hidden;
-        }
-
-        nav {
-            width: 25px;
-        }
-
-        .carousel {
-            margin-left: 1%;
-        }
-
+    .form-container {
+        margin-top: -60%;
+        margin-left: 0%;
     }
+}
+
+@media screen and (max-width:375px) {
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+}
