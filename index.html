@@ -4,12 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>KDWD</title>
+    <title>Kenny Downs Web Design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Nunito" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> -->
+
     <!-- StyleSheets -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
@@ -26,6 +25,7 @@
         <nav id="mySideNav" class="sidenav">
             <img class="logo" src="images/logo.png">
             <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0);" class="hamburger" onclick="myFunction()"><i class="fa fa-bars"></i></a>
             <a href="#projects">Projects</a>
             <a href="#aboutMe">About Me</a>
             <a href="#testamonials">Testamonials</a>
@@ -35,7 +35,7 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
-            <a href="javascript:void(0);" class="hamburger" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+
         </nav>
         <span onclick="openNav()"><i class="fas fa-arrow-circle-right"></i></span>
     </aside>
@@ -241,11 +241,11 @@
                     <div class="container">
                         <form>
                             <label>First Name</label>
-                            <input type="text" name="first"><br />
+                            <input type="text" name="first" required="required"><br />
                             <label>Last Name</label>
-                            <input type="text" name="last"><br />
+                            <input type="text" name="last" required="required"><br />
                             <label>Email</label>
-                            <input type="text" name="email"><br />
+                            <input type="text" name="email" required="required"><br />
                             <input type="submit" value="Contact Me">
                         </form>
                     </div>

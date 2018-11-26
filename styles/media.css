@@ -61,9 +61,6 @@
         visibility: hidden
     }
 
-    .hamburger {
-        visibility: visible;
-    }
 
     .main {
         display: flex;
@@ -92,6 +89,7 @@
         margin-top: 25%;
     }
 
+
     .form-container {
         width: 100%;
         bottom: -25em;
@@ -110,30 +108,30 @@
         border: 1px solid orange;
         left: 0;
     }
+
+
+    .about-container {
+        margin-top: 5%;
+        margin-left: -5.5%;
+        width: 100%;
+    }
+
+    .testamonial-head {
+        margin-left: 15%;
+    }
+
+    .test-carousel-inner p {
+        margin-left: -2.5%;
+        margin-top: 10%;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .form-container {
+        margin-left: 20%;
+    }
+
 }
-
-.about-container {
-    margin-top: 5%;
-    margin-left: -5.5%;
-    width: 100%;
-}
-
-.testamonial-head {
-    margin-left: 15%;
-}
-
-.test-carousel-inner p {
-    margin-left: -2.5%;
-    margin-top: 10%;
-    width: 100%;
-    text-align: justify;
-}
-
-.form-container {
-    margin-left: 20%;
-}
-
-
 
 @media screen and (max-width:768px) {
     .logo {
@@ -144,14 +142,18 @@
         width: 100%;
     }
 
-    .carousel {
-        margin-left: 1%;
+    .carousel-inner {
+        margin-left: -1%;
+        height: 100%;
+    }
+
+    img {
+        height: 25%;
     }
 
     .column {
         margin-left: -10%;
     }
-
 
     .form-container {
         margin-top: -60%;
@@ -164,4 +166,5 @@
         display: flex;
         flex-direction: column;
     }
+
 }
