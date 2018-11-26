@@ -48,7 +48,6 @@ function openModal() {
   }
   
   function showSlides(n) {
-    // From W3 Schools //
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("demo");
@@ -65,6 +64,8 @@ function openModal() {
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
+
+  // From W3 Schools //
 
 //-----OPEN AND CLOSE NAV-----//
 // function openNav() {

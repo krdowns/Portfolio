@@ -1,6 +1,6 @@
 ## About This Project
 
-This project used bootstrap as well as jquery to develop a simple portfolio site.
+This project used bootstrap as well as jquery/javascript to develop a simple portfolio site.
 
 
 ## Thought Process
@@ -11,7 +11,7 @@ My first carousel wouldn't properly adjust size with reduction in screen size.
 
 The testamonials section kept displaying all three slides instead of rotating them on a timer.
 
-My side nav bar is supposed to move to the top on a smaller screen with a hamburger menu, however the menu would not display, and the navbar would not move to the top.
+My side nav bar is supposed to move to the top on a smaller screen with a hamburger menu, however the menu would not display.
 
 ## Biggest Wins/Challenges
 

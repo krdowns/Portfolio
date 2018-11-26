@@ -51,7 +51,7 @@ body {
 p {
     padding: 0% 2% 25% 10%;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     color: #5f605d;
     display: block;
     transition: 0.3s;
@@ -396,7 +396,7 @@ article {
 }
 
 .form-container {
-    margin-left: 20%;
+    margin-left: 17.5%;
     color: #ef6817;
 }
 
