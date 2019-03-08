@@ -234,6 +234,8 @@ p {
 .image-header {
     font-weight: 200;
     margin-bottom: -10px;
+    width: 100%;
+    text-align: center;
 }
 
 .container:hover img {
@@ -267,7 +269,6 @@ p {
 .overlay-header h1{ 
     text-align: center;
     width: 100%;
-
 }
 
 .mobile-svg {
@@ -492,6 +493,11 @@ footer {
         width: 100%;
         text-align: center;
         margin: 0 auto;
+    }
+
+    .image-header {
+        margin-bottom: 10px;
+        font-weight: 100;
     }
 }
 
