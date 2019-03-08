@@ -281,6 +281,7 @@ p {
     height: 200px;
     text-align: center;
     background-color: #ef6817;
+    margin-top: 32px;
 }
 
 .contact-info-container h1 {
@@ -297,6 +298,7 @@ p {
     font-weight: 400;
     font-size: 20px;
     margin-bottom: -20px;
+    
 }
 
 /* FOOTER */
@@ -309,7 +311,8 @@ footer {
     z-index: 1;
     position: relative;
     bottom: 0;
-    padding-bottom: 2.5%;
+    margin-bottom: 0;
+    /* padding-bottom: 2.5%; */
     transition: 0.5s;
 }
 
@@ -604,6 +607,13 @@ footer {
 
         footer {
             padding-top: 5px;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        footer {
+            margin-top: 10px;
+            margin-bottom: 0px;
         }
     }
 
